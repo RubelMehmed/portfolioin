@@ -1,24 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&family=Rubik+Microbe&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpeg');
+    background: url('images/nao.jpg');
     background-size:cover;
     position:relative;
 }
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
+    color: rgb(11, 8, 52);
+
 }
 .hero_desc {
     font-size: 2rem;
+    color:#2c0756;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik Microbe', cursive;
 }
 .hero-text {
     text-align: center;
+    font-size: x-large;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
 }
 
 /* about section image css */
@@ -85,5 +97,39 @@
 #footer {
     background-color: #808080;
     text-align: center;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about li{
+    list-style: none;
+}
+
+nav li a{
+    color: black !important;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.7s ease-out;
+    margin-left: 20px;
+}
+nav li a:hover{
+    background-color: tomato;
+    color: #fff !important;
+}
+nav .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: tahoma;
+    font-weight: bolder;
+    color: #2c0756;
+}
+nav .logo span{
+    color: tomato;
+}
+#project .portfolioContent{
+    box-shadow: 5px 5px 5px red ;
 }
 
